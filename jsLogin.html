@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p>用户名
+<input id="username" type="text" name="username" value="">
+</p>
+<p>密码
+<input id="password" type="text" name="password" value="">
+</p>
+<br>
+<button type="button" onclick="check()">登录</button>
+
+<script>
+function check(){
+	if (username.value == "123" && password.value == "123")
+		alert("success");
+		else if(username.value == "" && password.value == "")
+			alert("please input username and password");
+		else
+			{
+			alert("password is wrong,please input the correct password");
+			password.value = "";
+			}
+
+}
+</script>
+</body>
+</html>
